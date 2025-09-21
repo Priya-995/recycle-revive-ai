@@ -23,14 +23,12 @@ const Index = () => {
           className="text-center mb-12"
         >
           <motion.h1 
-            className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent mb-4"
-            animate={{ 
-              backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-            }}
-            transition={{ 
-              duration: 3, 
-              repeat: Infinity, 
-              ease: "linear" 
+            className="text-6xl md:text-7xl font-bold text-primary mb-4"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            style={{
+              textShadow: "0 0 20px hsl(var(--primary) / 0.5)"
             }}
           >
             🌱 EcoSegrega
